@@ -12,6 +12,11 @@
 		EC5830FA2782BE5C00AB424A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC5830F92782BE5C00AB424A /* Assets.xcassets */; };
 		EC5830FD2782BE5C00AB424A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5830FB2782BE5C00AB424A /* LaunchScreen.storyboard */; };
 		EC58310E2782C1A000AB424A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58310D2782C1A000AB424A /* SignUpViewController.swift */; };
+		EC5831102782D4FD00AB424A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58310F2782D4FD00AB424A /* MainView.swift */; };
+		EC5831132782D54100AB424A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EC5831122782D54100AB424A /* SnapKit */; };
+		EC5831162782D5D300AB424A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5831152782D5D300AB424A /* MainViewController.swift */; };
+		EC58311B2783126B00AB424A /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = EC58311A2783126B00AB424A /* Then */; };
+		EC58311D2783191600AB424A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58311C2783191600AB424A /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,9 @@
 		EC5830FC2782BE5C00AB424A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC5830FE2782BE5C00AB424A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC58310D2782C1A000AB424A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		EC58310F2782D4FD00AB424A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		EC5831152782D5D300AB424A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EC58311C2783191600AB424A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5831132782D54100AB424A /* SnapKit in Frameworks */,
+				EC58311B2783126B00AB424A /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +68,7 @@
 				EC58310A2782C14400AB424A /* Resource */,
 				EC5831042782BE8100AB424A /* Models */,
 				EC5831052782BE8700AB424A /* Views */,
+				EC5831142782D5A600AB424A /* ViewControllers */,
 				EC5831062782BE8C00AB424A /* ViewModels */,
 				EC5831082782BF6B00AB424A /* Services */,
 				EC5831092782C11900AB424A /* AppDelegate */,
@@ -76,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				EC5830FB2782BE5C00AB424A /* LaunchScreen.storyboard */,
-				EC58310D2782C1A000AB424A /* SignUpViewController.swift */,
+				EC58310F2782D4FD00AB424A /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -112,6 +123,24 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		EC5831142782D5A600AB424A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC58311E2783196C00AB424A /* Auth */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EC58311E2783196C00AB424A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				EC5831152782D5D300AB424A /* MainViewController.swift */,
+				EC58311C2783191600AB424A /* SignInViewController.swift */,
+				EC58310D2782C1A000AB424A /* SignUpViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,6 +157,10 @@
 			dependencies = (
 			);
 			name = SeSAC_Project;
+			packageProductDependencies = (
+				EC5831122782D54100AB424A /* SnapKit */,
+				EC58311A2783126B00AB424A /* Then */,
+			);
 			productName = SeSAC_Project;
 			productReference = EC5830ED2782BE5B00AB424A /* SeSAC_Project.app */;
 			productType = "com.apple.product-type.application";
@@ -156,6 +189,10 @@
 				Base,
 			);
 			mainGroup = EC5830E42782BE5B00AB424A;
+			packageReferences = (
+				EC5831112782D54100AB424A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				EC5831192783126B00AB424A /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = EC5830EE2782BE5B00AB424A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -183,8 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC5830F12782BE5B00AB424A /* AppDelegate.swift in Sources */,
+				EC5831102782D4FD00AB424A /* MainView.swift in Sources */,
+				EC58311D2783191600AB424A /* SignInViewController.swift in Sources */,
 				EC58310E2782C1A000AB424A /* SignUpViewController.swift in Sources */,
 				EC5830F32782BE5B00AB424A /* SceneDelegate.swift in Sources */,
+				EC5831162782D5D300AB424A /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +434,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC5831112782D54100AB424A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		EC5831192783126B00AB424A /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC5831122782D54100AB424A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC5831112782D54100AB424A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		EC58311A2783126B00AB424A /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC5831192783126B00AB424A /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC5830E52782BE5B00AB424A /* Project object */;
 }
