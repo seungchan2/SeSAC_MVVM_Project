@@ -39,7 +39,7 @@ class MainViewController: UIViewController {
     }
     
     @objc func signInLabelTapped(sender: UITapGestureRecognizer) {
-        self.navigationController?.pushViewController(SignInViewController(), animated: true)
+        self.navigationController?.pushViewController(LoginViewController(), animated: true)
     }
     
 }
