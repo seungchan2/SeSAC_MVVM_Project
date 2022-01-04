@@ -36,7 +36,8 @@ class MainView: UIView {
         $0.layer.cornerRadius = 10
     }
     
-    let signInStackView = UIStackView().then {         $0.distribution = .fillProportionally
+    let signInStackView = UIStackView().then {
+        $0.distribution = .fillProportionally
         $0.axis = .horizontal
         $0.alignment = .center
         $0.spacing = 8
