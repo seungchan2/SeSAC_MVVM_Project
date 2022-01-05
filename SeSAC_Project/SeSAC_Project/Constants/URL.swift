@@ -24,7 +24,10 @@ extension Const {
         // change password
         static let changePasswordURL = "\(baseURL)/custom/change-password"
         
-        // post search
+        // get Posts
         static let getPostURL = "\(baseURL)/posts"
+        
+        // plus Post (body)
+        static let plusPostURL = "\(baseURL)/posts"
     }
 }
