@@ -14,9 +14,8 @@ class SignUpViewModel {
     var password = Observable("")
     var checkError = Observable(false)
     
-    //초기에는 탈출클로저 없이 화면전환을 구성하고 싶었으나 실패한 상태
     func fetchSignup(username: String, email: String, password: String) {
-        APIService.signup(username: username, email: email, password: password) { userData, error in
+        SignUpService.signup(username: username, email: email, password: password) { userData, error in
             guard let userData = userData else {
                 self.checkError.value = true
                 return
@@ -24,6 +23,7 @@ class SignUpViewModel {
             print("Signup Success")
             print(userData)
             UserDefaults.standard.set(userData.jwt, forKey: "token")
+            print(userData.jwt)
             
         }
     }

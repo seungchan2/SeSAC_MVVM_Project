@@ -14,13 +14,11 @@ class LoginViewModel {
     var checkError = Observable(false)
 
     func fetchLogin(email: String, password: String) {
-        APIService.login(email: email, password: password) { userData, error in
+        LoginService.login(email: email, password: password) { userData, error in
             guard let userData = userData else {
                 self.checkError.value = true
                 return
             }
-            print("Login Success")
-            print(userData)
             UserDefaults.standard.set(userData.jwt, forKey: "token")
         }
     }
