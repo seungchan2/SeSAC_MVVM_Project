@@ -1,6 +1,7 @@
 # SeSAC_MVVM_Project
 
-MVVM, URLSession 활용한 서버 통신
+MVVM, URLSession 활용한 서버 통신 (Rx를 어디 녹일 지 고민해보기)  </br>
+목표 : UI를 최소로 구현하고 기능 먼저 구현하기
 
 1. DispatchQueue.main.async을 제대로 이해하고 쓰는가..
 2. View Model ViewModel을 잘 지켰는가 ..
@@ -12,6 +13,6 @@ MVVM, URLSession 활용한 서버 통신
 8. Then을 이용해서 UI를 구현하는데 반복되는 코드가 많음 -> Extension?
 9. Rx를 녹일 수 있는 부분이 있는가..
 
--------------포스트 작성---------------
+-------------포스트 작성까지의 ---------------
 
 
