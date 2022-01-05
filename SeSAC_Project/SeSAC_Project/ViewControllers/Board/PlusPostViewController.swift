@@ -8,22 +8,45 @@
 import UIKit
 
 class PlusPostViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    let postView = PlusPostView()
+    var postViewModel = PlusPostViewModel()
+    
+    override func loadView() {
+        self.view = postView
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        initNavigaionBar()
+        
+        
     }
-    */
+    func initNavigaionBar() {
+        view.backgroundColor = .white
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector(leftBarButtonClicked))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "완료", style: .plain, target: self, action: #selector(rightBarButtonClicked))
+        navigationController?.navigationBar.tintColor = .black
+    }
+    
+    @objc
+      func leftBarButtonClicked() {
+          navigationController?.popViewController(animated: true)
+      }
+      
+      @objc
+      func rightBarButtonClicked() {
+          postViewModel.plusPostText.value = postView.textView.text
+          postViewModel.fetchAddPost {
+              DispatchQueue.main.async {
+                  self.navigationController?.popViewController(animated: true)
+                  print("살려주라 제발")
+              }
+          }
+      }
+      
+  }
+    
+    
+    
 
-}
