@@ -10,6 +10,14 @@
 		EC2C477727847FA500DF9EAD /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C477627847FA500DF9EAD /* URL.swift */; };
 		EC2C477B2784900100DF9EAD /* Extension + UITextField .swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C477A2784900100DF9EAD /* Extension + UITextField .swift */; };
 		EC2C477D2784904100DF9EAD /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C477C2784904100DF9EAD /* SignUp.swift */; };
+		EC2C478327849F2500DF9EAD /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C478227849F2500DF9EAD /* BoardViewController.swift */; };
+		EC2C47852784A29E00DF9EAD /* BoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C47842784A29E00DF9EAD /* BoardTableViewCell.swift */; };
+		EC2C47872784A98800DF9EAD /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C47862784A98800DF9EAD /* LoginService.swift */; };
+		EC2C47892784A99300DF9EAD /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C47882784A99300DF9EAD /* SignUpService.swift */; };
+		EC2C478B2784A9DE00DF9EAD /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C478A2784A9DE00DF9EAD /* APIError.swift */; };
+		EC2C47972785ED8C00DF9EAD /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C47962785ED8C00DF9EAD /* BoardViewModel.swift */; };
+		EC2C47992785EE6D00DF9EAD /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C47982785EE6D00DF9EAD /* Board.swift */; };
+		EC2C479B2785EF7600DF9EAD /* BoardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C479A2785EF7600DF9EAD /* BoardService.swift */; };
 		EC5830F12782BE5B00AB424A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5830F02782BE5B00AB424A /* AppDelegate.swift */; };
 		EC5830F32782BE5B00AB424A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5830F22782BE5B00AB424A /* SceneDelegate.swift */; };
 		EC5830FA2782BE5C00AB424A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC5830F92782BE5C00AB424A /* Assets.xcassets */; };
@@ -24,17 +32,26 @@
 		EC58312227834A4100AB424A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58312127834A4100AB424A /* SignUpView.swift */; };
 		EC58312627834DFC00AB424A /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58312527834DFC00AB424A /* Observable.swift */; };
 		EC5831322784749B00AB424A /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = EC5831312784749B00AB424A /* Toast */; };
-		EC5831362784752600AB424A /* APIServce.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5831352784752600AB424A /* APIServce.swift */; };
 		EC5831382784755E00AB424A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5831372784755E00AB424A /* LoginViewModel.swift */; };
 		EC58313A2784756600AB424A /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5831392784756600AB424A /* SignUpViewModel.swift */; };
 		EC58313C27847B6900AB424A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58313B27847B6900AB424A /* Login.swift */; };
 		EC58313F27847C0900AB424A /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58313E27847C0900AB424A /* Const.swift */; };
+		ECDCD6A02785FB6C00CA52A1 /* BoardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCD69F2785FB6C00CA52A1 /* BoardDetailViewController.swift */; };
+		ECDCD6A22785FB8300CA52A1 /* PlusPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCD6A12785FB8300CA52A1 /* PlusPostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EC2C477627847FA500DF9EAD /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		EC2C477A2784900100DF9EAD /* Extension + UITextField .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UITextField .swift"; sourceTree = "<group>"; };
 		EC2C477C2784904100DF9EAD /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		EC2C478227849F2500DF9EAD /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		EC2C47842784A29E00DF9EAD /* BoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTableViewCell.swift; sourceTree = "<group>"; };
+		EC2C47862784A98800DF9EAD /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		EC2C47882784A99300DF9EAD /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
+		EC2C478A2784A9DE00DF9EAD /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		EC2C47962785ED8C00DF9EAD /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
+		EC2C47982785EE6D00DF9EAD /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		EC2C479A2785EF7600DF9EAD /* BoardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardService.swift; sourceTree = "<group>"; };
 		EC5830ED2782BE5B00AB424A /* SeSAC_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5830F02782BE5B00AB424A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC5830F22782BE5B00AB424A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,11 +65,12 @@
 		EC58311F27834A3800AB424A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EC58312127834A4100AB424A /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		EC58312527834DFC00AB424A /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
-		EC5831352784752600AB424A /* APIServce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServce.swift; sourceTree = "<group>"; };
 		EC5831372784755E00AB424A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		EC5831392784756600AB424A /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		EC58313B27847B6900AB424A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		EC58313E27847C0900AB424A /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		ECDCD69F2785FB6C00CA52A1 /* BoardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetailViewController.swift; sourceTree = "<group>"; };
+		ECDCD6A12785FB8300CA52A1 /* PlusPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusPostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +93,58 @@
 				EC2C477A2784900100DF9EAD /* Extension + UITextField .swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		EC2C477E278498D100DF9EAD /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C47842784A29E00DF9EAD /* BoardTableViewCell.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		EC2C478127849F1F00DF9EAD /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C478227849F2500DF9EAD /* BoardViewController.swift */,
+				ECDCD69F2785FB6C00CA52A1 /* BoardDetailViewController.swift */,
+				ECDCD6A12785FB8300CA52A1 /* PlusPostViewController.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		EC2C47902784AABB00DF9EAD /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				EC58313B27847B6900AB424A /* Login.swift */,
+				EC2C477C2784904100DF9EAD /* SignUp.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		EC2C47912784AACB00DF9EAD /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C47982785EE6D00DF9EAD /* Board.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		EC2C47942785ED6E00DF9EAD /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				EC5831372784755E00AB424A /* LoginViewModel.swift */,
+				EC5831392784756600AB424A /* SignUpViewModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		EC2C47952785ED7900DF9EAD /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				EC2C47962785ED8C00DF9EAD /* BoardViewModel.swift */,
+			);
+			path = Board;
 			sourceTree = "<group>";
 		};
 		EC5830E42782BE5B00AB424A = {
@@ -103,7 +173,7 @@
 				EC5831052782BE8700AB424A /* Views */,
 				EC5831142782D5A600AB424A /* ViewControllers */,
 				EC5831062782BE8C00AB424A /* ViewModels */,
-				EC5831082782BF6B00AB424A /* Services */,
+				EC5831082782BF6B00AB424A /* APIService */,
 				EC58312427834DCE00AB424A /* Helper */,
 				EC58313D27847BF300AB424A /* Constants */,
 				EC5831092782C11900AB424A /* AppDelegate */,
@@ -114,8 +184,8 @@
 		EC5831042782BE8100AB424A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EC58313B27847B6900AB424A /* Login.swift */,
-				EC2C477C2784904100DF9EAD /* SignUp.swift */,
+				EC2C47902784AABB00DF9EAD /* Auth */,
+				EC2C47912784AACB00DF9EAD /* Board */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -123,6 +193,7 @@
 		EC5831052782BE8700AB424A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EC2C477E278498D100DF9EAD /* Board */,
 				EC58312327834A4600AB424A /* Auth */,
 				EC5830FB2782BE5C00AB424A /* LaunchScreen.storyboard */,
 			);
@@ -132,18 +203,21 @@
 		EC5831062782BE8C00AB424A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				EC5831372784755E00AB424A /* LoginViewModel.swift */,
-				EC5831392784756600AB424A /* SignUpViewModel.swift */,
+				EC2C47952785ED7900DF9EAD /* Board */,
+				EC2C47942785ED6E00DF9EAD /* Auth */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		EC5831082782BF6B00AB424A /* Services */ = {
+		EC5831082782BF6B00AB424A /* APIService */ = {
 			isa = PBXGroup;
 			children = (
-				EC5831352784752600AB424A /* APIServce.swift */,
+				EC2C478A2784A9DE00DF9EAD /* APIError.swift */,
+				EC2C47862784A98800DF9EAD /* LoginService.swift */,
+				EC2C47882784A99300DF9EAD /* SignUpService.swift */,
+				EC2C479A2785EF7600DF9EAD /* BoardService.swift */,
 			);
-			path = Services;
+			path = APIService;
 			sourceTree = "<group>";
 		};
 		EC5831092782C11900AB424A /* AppDelegate */ = {
@@ -166,6 +240,7 @@
 		EC5831142782D5A600AB424A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				EC2C478127849F1F00DF9EAD /* Board */,
 				EC58311E2783196C00AB424A /* Auth */,
 			);
 			path = ViewControllers;
@@ -288,23 +363,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC5831362784752600AB424A /* APIServce.swift in Sources */,
 				EC5830F12782BE5B00AB424A /* AppDelegate.swift in Sources */,
 				EC58313C27847B6900AB424A /* Login.swift in Sources */,
 				EC58312027834A3800AB424A /* LoginView.swift in Sources */,
 				EC5831102782D4FD00AB424A /* MainView.swift in Sources */,
+				ECDCD6A22785FB8300CA52A1 /* PlusPostViewController.swift in Sources */,
 				EC2C477727847FA500DF9EAD /* URL.swift in Sources */,
 				EC58311D2783191600AB424A /* LoginViewController.swift in Sources */,
 				EC58312627834DFC00AB424A /* Observable.swift in Sources */,
 				EC2C477B2784900100DF9EAD /* Extension + UITextField .swift in Sources */,
 				EC58312227834A4100AB424A /* SignUpView.swift in Sources */,
+				EC2C47852784A29E00DF9EAD /* BoardTableViewCell.swift in Sources */,
+				EC2C47972785ED8C00DF9EAD /* BoardViewModel.swift in Sources */,
+				EC2C478B2784A9DE00DF9EAD /* APIError.swift in Sources */,
 				EC58313F27847C0900AB424A /* Const.swift in Sources */,
+				EC2C47992785EE6D00DF9EAD /* Board.swift in Sources */,
+				EC2C479B2785EF7600DF9EAD /* BoardService.swift in Sources */,
 				EC58310E2782C1A000AB424A /* SignUpViewController.swift in Sources */,
+				ECDCD6A02785FB6C00CA52A1 /* BoardDetailViewController.swift in Sources */,
+				EC2C47872784A98800DF9EAD /* LoginService.swift in Sources */,
 				EC5831382784755E00AB424A /* LoginViewModel.swift in Sources */,
 				EC5830F32782BE5B00AB424A /* SceneDelegate.swift in Sources */,
 				EC58313A2784756600AB424A /* SignUpViewModel.swift in Sources */,
 				EC5831162782D5D300AB424A /* MainViewController.swift in Sources */,
+				EC2C478327849F2500DF9EAD /* BoardViewController.swift in Sources */,
 				EC2C477D2784904100DF9EAD /* SignUp.swift in Sources */,
+				EC2C47892784A99300DF9EAD /* SignUpService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

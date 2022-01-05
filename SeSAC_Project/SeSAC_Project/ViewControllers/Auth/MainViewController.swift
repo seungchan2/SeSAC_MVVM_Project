@@ -24,13 +24,9 @@ class MainViewController: UIViewController {
     
     func setUI() {
         view.backgroundColor = .white
-        
         mainView.signUpButton.addTarget(self, action: #selector(signUpButtonClicked), for: .touchUpInside)
-        
         mainView.signInLabel.isUserInteractionEnabled = true
-        
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(signInLabelTapped))
-        
         mainView.signInLabel.addGestureRecognizer(tapGestureRecognizer)
     }
     

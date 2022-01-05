@@ -18,9 +18,13 @@ class SignUpViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        setData()
+        checkPassword()
+    }
+    
+    func setData() {
+        
         view.backgroundColor = .white
-
-
         signUpViewModel.username.bind { text in
                  self.signUpView.nicknameTextField.text = text
              }
@@ -54,17 +58,21 @@ class SignUpViewController: UIViewController {
        
        @objc
        func signupButtonClicked() {
-           print("회원가입중!!")
+           print("회원가입")
            print(signUpViewModel.username.value)
            print(signUpViewModel.email.value)
            print(signUpViewModel.password.value)
+           
+
            DispatchQueue.main.async {
-               //회원가입 성공 메시지 추가
                if !self.signUpViewModel.checkError.value {
+                   print("완료")
                    let vc = LoginViewController()
-                   vc.title = "새싹농장 로그인하기"
                    self.navigationController?.pushViewController(vc, animated: true)
-               } else { //회원가입 실패 경우에 대한 메시지
+                   guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
+                                                  windowScene.windows.first?.rootViewController = UINavigationController(rootViewController: BoardViewController())
+                                                  windowScene.windows.first?.makeKeyAndVisible()
+               } else {
                    print("회원가입 실패")
                }
            }

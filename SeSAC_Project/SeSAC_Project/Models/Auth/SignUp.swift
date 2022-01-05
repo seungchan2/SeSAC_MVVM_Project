@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Sign
-struct Sign: Codable {
+struct SignUp: Codable {
     let jwt: String
     let user: User
 }

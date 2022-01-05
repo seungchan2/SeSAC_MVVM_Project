@@ -48,9 +48,6 @@ class LoginViewController: UIViewController {
     
     @objc
     func signUpButtonClicked() {
-        print("로그인")
-        print(loginViewModel.email.value)
-        print(loginViewModel.password.value)
         
         DispatchQueue.main.async {
             self.loginViewModel.fetchAPI()

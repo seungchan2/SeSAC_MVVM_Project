@@ -20,5 +20,11 @@ extension Const {
         
         // login
         static let loginURL = "\(baseURL)/auth/local"
+        
+        // change password
+        static let changePasswordURL = "\(baseURL)/custom/change-password"
+        
+        // post search
+        static let getPostURL = "\(baseURL)/posts"
     }
 }
