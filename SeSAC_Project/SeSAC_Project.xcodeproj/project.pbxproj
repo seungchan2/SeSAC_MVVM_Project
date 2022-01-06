@@ -40,7 +40,12 @@
 		ECDCD6A22785FB8300CA52A1 /* PlusPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCD6A12785FB8300CA52A1 /* PlusPostViewController.swift */; };
 		ECDCD6A62785FCC300CA52A1 /* PlusPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCD6A52785FCC300CA52A1 /* PlusPostView.swift */; };
 		ECDCD6A82785FCD300CA52A1 /* PlusPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCD6A72785FCD300CA52A1 /* PlusPostViewModel.swift */; };
-		ECDCD6AA2785FCDF00CA52A1 /* PlusPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCD6A92785FCDF00CA52A1 /* PlusPostService.swift */; };
+		ECDCD6AA2785FCDF00CA52A1 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCD6A92785FCDF00CA52A1 /* PostService.swift */; };
+		ECDCD6AC27860FA400CA52A1 /* BoardDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCD6AB27860FA400CA52A1 /* BoardDetailTableViewCell.swift */; };
+		ECDCD6AE278615DA00CA52A1 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCD6AD278615DA00CA52A1 /* CommentTableViewCell.swift */; };
+		ECDCD6B0278629C000CA52A1 /* BoardDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCD6AF278629C000CA52A1 /* BoardDetailViewModel.swift */; };
+		ECDCD6B227862CA700CA52A1 /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCD6B127862CA700CA52A1 /* CommentViewModel.swift */; };
+		ECDCD6B427862EC800CA52A1 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCD6B327862EC800CA52A1 /* Comment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,7 +81,12 @@
 		ECDCD6A12785FB8300CA52A1 /* PlusPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusPostViewController.swift; sourceTree = "<group>"; };
 		ECDCD6A52785FCC300CA52A1 /* PlusPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusPostView.swift; sourceTree = "<group>"; };
 		ECDCD6A72785FCD300CA52A1 /* PlusPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusPostViewModel.swift; sourceTree = "<group>"; };
-		ECDCD6A92785FCDF00CA52A1 /* PlusPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusPostService.swift; sourceTree = "<group>"; };
+		ECDCD6A92785FCDF00CA52A1 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		ECDCD6AB27860FA400CA52A1 /* BoardDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetailTableViewCell.swift; sourceTree = "<group>"; };
+		ECDCD6AD278615DA00CA52A1 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		ECDCD6AF278629C000CA52A1 /* BoardDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetailViewModel.swift; sourceTree = "<group>"; };
+		ECDCD6B127862CA700CA52A1 /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
+		ECDCD6B327862EC800CA52A1 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				EC2C47842784A29E00DF9EAD /* BoardTableViewCell.swift */,
+				ECDCD6AB27860FA400CA52A1 /* BoardDetailTableViewCell.swift */,
+				ECDCD6AD278615DA00CA52A1 /* CommentTableViewCell.swift */,
 				ECDCD6A52785FCC300CA52A1 /* PlusPostView.swift */,
 			);
 			path = Board;
@@ -133,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				EC2C47982785EE6D00DF9EAD /* Board.swift */,
+				ECDCD6B327862EC800CA52A1 /* Comment.swift */,
 			);
 			path = Board;
 			sourceTree = "<group>";
@@ -151,6 +164,8 @@
 			children = (
 				EC2C47962785ED8C00DF9EAD /* BoardViewModel.swift */,
 				ECDCD6A72785FCD300CA52A1 /* PlusPostViewModel.swift */,
+				ECDCD6AF278629C000CA52A1 /* BoardDetailViewModel.swift */,
+				ECDCD6B127862CA700CA52A1 /* CommentViewModel.swift */,
 			);
 			path = Board;
 			sourceTree = "<group>";
@@ -224,7 +239,7 @@
 				EC2C47862784A98800DF9EAD /* LoginService.swift */,
 				EC2C47882784A99300DF9EAD /* SignUpService.swift */,
 				EC2C479A2785EF7600DF9EAD /* BoardService.swift */,
-				ECDCD6A92785FCDF00CA52A1 /* PlusPostService.swift */,
+				ECDCD6A92785FCDF00CA52A1 /* PostService.swift */,
 			);
 			path = APIService;
 			sourceTree = "<group>";
@@ -377,14 +392,16 @@
 				EC58312027834A3800AB424A /* LoginView.swift in Sources */,
 				EC5831102782D4FD00AB424A /* MainView.swift in Sources */,
 				ECDCD6A22785FB8300CA52A1 /* PlusPostViewController.swift in Sources */,
+				ECDCD6B427862EC800CA52A1 /* Comment.swift in Sources */,
 				EC2C477727847FA500DF9EAD /* URL.swift in Sources */,
 				EC58311D2783191600AB424A /* LoginViewController.swift in Sources */,
-				ECDCD6AA2785FCDF00CA52A1 /* PlusPostService.swift in Sources */,
+				ECDCD6AA2785FCDF00CA52A1 /* PostService.swift in Sources */,
 				EC58312627834DFC00AB424A /* Observable.swift in Sources */,
 				EC2C477B2784900100DF9EAD /* Extension + UITextField .swift in Sources */,
 				EC58312227834A4100AB424A /* SignUpView.swift in Sources */,
 				EC2C47852784A29E00DF9EAD /* BoardTableViewCell.swift in Sources */,
 				EC2C47972785ED8C00DF9EAD /* BoardViewModel.swift in Sources */,
+				ECDCD6AC27860FA400CA52A1 /* BoardDetailTableViewCell.swift in Sources */,
 				EC2C478B2784A9DE00DF9EAD /* APIError.swift in Sources */,
 				ECDCD6A62785FCC300CA52A1 /* PlusPostView.swift in Sources */,
 				EC58313F27847C0900AB424A /* Const.swift in Sources */,
@@ -392,12 +409,15 @@
 				EC2C479B2785EF7600DF9EAD /* BoardService.swift in Sources */,
 				EC58310E2782C1A000AB424A /* SignUpViewController.swift in Sources */,
 				ECDCD6A02785FB6C00CA52A1 /* BoardDetailViewController.swift in Sources */,
+				ECDCD6AE278615DA00CA52A1 /* CommentTableViewCell.swift in Sources */,
 				EC2C47872784A98800DF9EAD /* LoginService.swift in Sources */,
 				EC5831382784755E00AB424A /* LoginViewModel.swift in Sources */,
 				EC5830F32782BE5B00AB424A /* SceneDelegate.swift in Sources */,
 				EC58313A2784756600AB424A /* SignUpViewModel.swift in Sources */,
 				EC5831162782D5D300AB424A /* MainViewController.swift in Sources */,
+				ECDCD6B227862CA700CA52A1 /* CommentViewModel.swift in Sources */,
 				EC2C478327849F2500DF9EAD /* BoardViewController.swift in Sources */,
+				ECDCD6B0278629C000CA52A1 /* BoardDetailViewModel.swift in Sources */,
 				EC2C477D2784904100DF9EAD /* SignUp.swift in Sources */,
 				EC2C47892784A99300DF9EAD /* SignUpService.swift in Sources */,
 				ECDCD6A82785FCD300CA52A1 /* PlusPostViewModel.swift in Sources */,

@@ -8,6 +8,10 @@
 import SnapKit
 import UIKit
 
+
+// 수정해야 할 사항 -> 모든 텍스트필드가 차 있을 때만 버튼 활성화
+// 현재는 그냥 버튼이 눌림..
+
 class SignUpViewController: UIViewController {
     
     let signUpView = SignUpView()
@@ -58,33 +62,28 @@ class SignUpViewController: UIViewController {
        
        @objc
        func signupButtonClicked() {
-           print("회원가입")
-           print(signUpViewModel.username.value)
-           print(signUpViewModel.email.value)
-           print(signUpViewModel.password.value)
-           
-
            DispatchQueue.main.async {
                if !self.signUpViewModel.checkError.value {
-                   print("완료")
                    let vc = LoginViewController()
                    self.navigationController?.pushViewController(vc, animated: true)
                    guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
                                                   windowScene.windows.first?.rootViewController = UINavigationController(rootViewController: BoardViewController())
                                                   windowScene.windows.first?.makeKeyAndVisible()
                } else {
-                   print("회원가입 실패")
+                   print("실패")
                }
            }
        }
             
        func checkPassword() {
-           guard let password = signUpView.passwordTextField.text else { return }
-           guard let passwordCheck = signUpView.passwordCheckTextField.text else { return }
-           if password == passwordCheck {
-               signUpView.signUpButton.isEnabled = true
-           } else {
-               signUpView.signUpButton.isEnabled = false
+           guard let email = signUpView.emailTextField.text?.isEmpty else { return }
+           guard let nickname = signUpView.nicknameTextField.text?.isEmpty else { return }
+           guard let password = signUpView.passwordTextField.text?.isEmpty else { return }
+           guard let passwordCheck = signUpView.passwordCheckTextField.text?.isEmpty else { return }
+    
+           // 걍 뚤림.. 리팩토링 필요 ...
+               if !email && !nickname && !password && !passwordCheck {
+                   signUpView.signUpButton.isEnabled = true
            }
        }
        

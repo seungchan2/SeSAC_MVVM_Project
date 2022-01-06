@@ -10,7 +10,7 @@ import Foundation
 class BoardService {
     
     static func board(completion: @escaping (Boards?, APIError?) -> Void) {
-        let url = URL(string: Const.URL.getPostURL)!
+        let url = URL(string: Const.URL.postURL)!
         
         // 로그인, 회원가입 때 저장한 토큰 사용
         // token 옵셔널 바인딩 에러
@@ -20,7 +20,7 @@ class BoardService {
         
         // 베어러 토큰, 헤더에 Authorization
         var request = URLRequest(url: url)
-        request.setValue("bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjQ4LCJpYXQiOjE2NDE0MDE1MDUsImV4cCI6MTY0MTQwMzMwNX0.sEawhoej1qXqI8stvS5HFdlIIFCZzbhlrqs9ZpN_0m8", forHTTPHeaderField: "authorization")
+        request.setValue("bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjUxLCJpYXQiOjE2NDE0MDM4MDMsImV4cCI6MTY0MTQwNTYwM30.Nck5Cpjkr9yNB9cIn6pZ-ijJB6VbmELW6jFGJlfMRrk", forHTTPHeaderField: "authorization")
         URLSession.shared.dataTask(with: request) { data, response, error in
             
             DispatchQueue.main.async {

@@ -12,7 +12,7 @@ class PlusPostViewModel {
     var plusPostText = Observable("")
 
     func fetchAddPost(completion: @escaping () -> Void) {
-        PlusPostService.plusPost(text: plusPostText.value) { post, error in
+        PostService.plusPost(text: plusPostText.value) { post, error in
             guard let post = post else {
                 return print("게시글 작성 좀")
             }

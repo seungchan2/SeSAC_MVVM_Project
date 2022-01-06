@@ -12,6 +12,7 @@ import Then
 class BoardViewController: UIViewController {
     
     var boardViewModel = BoardViewModel()
+    
     var plusButton = UIButton().then {
         $0.setImage(UIImage(systemName: "plus"), for: .normal)
         $0.tintColor = .white
@@ -21,7 +22,7 @@ class BoardViewController: UIViewController {
     }
     
     // 테이블뷰를 BoardView에 만들어서 사용하고 싶었는데 ..
-    private let tableView = UITableView().then {
+    let tableView = UITableView().then {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.register(BoardTableViewCell.self, forCellReuseIdentifier: BoardTableViewCell.identifier)
     }
@@ -83,6 +84,7 @@ extension BoardViewController: UITableViewDataSource {
         cell.nicknameLabel.text = row.user.username
         cell.writeLabel.text = row.text
         cell.dateLabel.text = row.createdAt
+        cell.countLabel.text = "\(row.comments.count)"
         
         return cell
         

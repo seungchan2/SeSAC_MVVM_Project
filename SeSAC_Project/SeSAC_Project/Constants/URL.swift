@@ -24,10 +24,13 @@ extension Const {
         // change password
         static let changePasswordURL = "\(baseURL)/custom/change-password"
         
-        // get Posts
-        static let getPostURL = "\(baseURL)/posts"
+        // post와 comment가 공통적으로 쓰여서 Service URl 부분에서 추가만 해주면 될 듯?
         
-        // plus Post (body)
-        static let plusPostURL = "\(baseURL)/posts"
+        // get Posts
+        static let postURL = "\(baseURL)/posts"
+        
+        // get Comments
+        static let commentsURL = "\(baseURL)/comments"
+        
     }
 }
