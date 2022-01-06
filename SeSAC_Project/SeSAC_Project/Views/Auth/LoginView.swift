@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 import Then
 
+// 수정해야 할 사항 -> 이메일, 패스워드가 있을 때만 버튼 활성화
 class LoginView: UIView {
     
     let emailTextField = UITextField().then {
@@ -30,7 +31,7 @@ class LoginView: UIView {
     
     let signInButton = UIButton().then {
         $0.backgroundColor = .systemGreen
-        $0.setTitle("가입하기", for: .normal)
+        $0.setTitle("로그인하기", for: .normal)
         $0.layer.cornerRadius = 10
     }
 

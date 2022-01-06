@@ -32,6 +32,12 @@ class BoardTableViewCell: UITableViewCell {
     let commentLabel = UILabel().then {
         $0.font = .boldSystemFont(ofSize: 10)
         $0.textAlignment = .left
+        $0.text = "댓글"
+    }
+    
+    let countLabel = UILabel().then {
+        $0.font = .boldSystemFont(ofSize: 10)
+        $0.textAlignment = .left
     }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -45,7 +51,7 @@ class BoardTableViewCell: UITableViewCell {
     }
     
     func addContentView() {
-        [nicknameLabel, dateLabel, writeLabel, commentLabel].forEach {
+        [nicknameLabel, dateLabel, writeLabel, commentLabel, countLabel].forEach {
             contentView.addSubview($0)
         }
     }
@@ -65,6 +71,19 @@ class BoardTableViewCell: UITableViewCell {
             $0.top.equalTo(writeLabel.snp.bottom).offset(15)
             $0.leading.equalToSuperview().offset(15)
         }
+        
+        commentLabel.snp.makeConstraints{
+            $0.top.equalTo(dateLabel.snp.bottom).offset(10)
+            $0.leading.equalToSuperview().offset(15)
+            $0.trailing.equalToSuperview().offset(-15)
+        }
+        
+        countLabel.snp.makeConstraints {
+            $0.top.equalTo(dateLabel.snp.bottom).offset(10)
+            $0.leading.equalTo(commentLabel.snp.leading).inset(20)
+            
+        }
+        
     }
     
 }

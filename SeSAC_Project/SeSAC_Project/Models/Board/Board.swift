@@ -54,8 +54,10 @@ struct BoardUser: Codable {
     }
 }
 
+// 이 부분에 대해서 고민을 해볼 필요가 있음
 enum Provider: String, Codable {
     case local = "local"
 }
 
+// 이 부분에 대해서 고민을 해볼 필요가 있음
 typealias Boards = [Board]
