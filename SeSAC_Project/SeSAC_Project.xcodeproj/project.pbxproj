@@ -43,8 +43,6 @@
 		ECDCD6AA2785FCDF00CA52A1 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCD6A92785FCDF00CA52A1 /* PostService.swift */; };
 		ECDCD6AC27860FA400CA52A1 /* BoardDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCD6AB27860FA400CA52A1 /* BoardDetailTableViewCell.swift */; };
 		ECDCD6AE278615DA00CA52A1 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCD6AD278615DA00CA52A1 /* CommentTableViewCell.swift */; };
-		ECDCD6B0278629C000CA52A1 /* BoardDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCD6AF278629C000CA52A1 /* BoardDetailViewModel.swift */; };
-		ECDCD6B227862CA700CA52A1 /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCD6B127862CA700CA52A1 /* CommentViewModel.swift */; };
 		ECDCD6B427862EC800CA52A1 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCD6B327862EC800CA52A1 /* Comment.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,8 +82,6 @@
 		ECDCD6A92785FCDF00CA52A1 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		ECDCD6AB27860FA400CA52A1 /* BoardDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetailTableViewCell.swift; sourceTree = "<group>"; };
 		ECDCD6AD278615DA00CA52A1 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
-		ECDCD6AF278629C000CA52A1 /* BoardDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetailViewModel.swift; sourceTree = "<group>"; };
-		ECDCD6B127862CA700CA52A1 /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
 		ECDCD6B327862EC800CA52A1 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,8 +160,6 @@
 			children = (
 				EC2C47962785ED8C00DF9EAD /* BoardViewModel.swift */,
 				ECDCD6A72785FCD300CA52A1 /* PlusPostViewModel.swift */,
-				ECDCD6AF278629C000CA52A1 /* BoardDetailViewModel.swift */,
-				ECDCD6B127862CA700CA52A1 /* CommentViewModel.swift */,
 			);
 			path = Board;
 			sourceTree = "<group>";
@@ -415,9 +409,7 @@
 				EC5830F32782BE5B00AB424A /* SceneDelegate.swift in Sources */,
 				EC58313A2784756600AB424A /* SignUpViewModel.swift in Sources */,
 				EC5831162782D5D300AB424A /* MainViewController.swift in Sources */,
-				ECDCD6B227862CA700CA52A1 /* CommentViewModel.swift in Sources */,
 				EC2C478327849F2500DF9EAD /* BoardViewController.swift in Sources */,
-				ECDCD6B0278629C000CA52A1 /* BoardDetailViewModel.swift in Sources */,
 				EC2C477D2784904100DF9EAD /* SignUp.swift in Sources */,
 				EC2C47892784A99300DF9EAD /* SignUpService.swift in Sources */,
 				ECDCD6A82785FCD300CA52A1 /* PlusPostViewModel.swift in Sources */,
